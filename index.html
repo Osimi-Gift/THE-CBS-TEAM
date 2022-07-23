@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
-      $(document).ready(function(){
-        $('#icon').click(function(){
-          $('ul').toggleClass('show');
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("ul").toggleClass("show");
         });
       });
-
-
     </script>
-</head>
-<body>
-  <nav>
-    <label class="logo">DesignX</label>
-    <ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <label class="logo"> CBS Team <img src="image1.jpg" alt="logo" /></label>
+
+      <ul>
         <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">Login</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Feedback</a></li>
-    </ul>
-    <label  id="icon">
+      </ul>
+      <label id="icon">
         <i class="fas fa-bars"></i>
-    </label>
-    <section></section>
-  </nav>  
-</body>
+      </label>
+
+      <section></section>
+    </nav>
+    <h1 class="text">Learn, teach<br>and improve yourself </h1>
+    <p class="paragraph">Get to improve your tech skills with a body of <br>Webdevelopers from various stack<br>
+    CBS Team is a platform that allows members to relate with <br>each other in solving both <br> 
+  individual and collective problems.  </p>
+<div class="container2" > <p class="paragraph"><b><h2 class="paragraph"  id="meet">Meet our team leaders</h2></b></p></div>
+  <div class="container1">
+    <div style="width:100% ;" class="picture" ><img src="GIFT.jpg"  class="image"><button>Osimi Godsgift<br>Team Director </button></div>
+    <div  class="picture"><img src="ELIJAH.jpg"  class="image"> <button>ELIJAH<br>Senior UI/UX Designer</button></div>
+    <div  class="picture"style="width:100% ;"><img src="EMM.jpg"    class="image"><button>Emm<br>Project Co-ordinator</button></div>
+    <div  class="picture"><img src="BETHAN.jpg" class="image"><button>Bethan<br>Pulic Relation Officer</button></div>
+    <div  class="picture" style="width:100% ;"><img src="ROSE.jpg"  class="image"><button>Rosemary<br>Admin Co-ordinator</button></div>
+    <div  class="picture"><img src="SILAS.jpg" class="image"><button>Silas<br>Backend Team leader</button></div>
+    <div  class="picture"><img src="MERCY.jpg" class="image"><button>Mercy<br>Program organiser</button></div>
+    <div  class="picture"><img src="DEMAND.jpg" class="image"><button>Demand<br>Assist Frontend Leader</button></div>
+    <div  class="picture"><img src="SMILING.jpg" class="image"><button>SMILING</button></div>
+  </div>
+  <div class="container4">
+    <h1 class="text" >Let us do the job</h1>
+ <p class="paragraph">Do you want to build a website? <br>have you been looking for professional designers who will turn <br>your idea into a reality, we are at your service.</p>
+  <button style="display:block ; justify-content:center; margin:auto; width:50%; background-color: green;"><a href="">Hire us</a></button>
+</div>
+  </body>
 </html>

@@ -3,31 +3,87 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+   max-width: 100% ;
 }
 body{
     font-family: montserrat;
+    background: #465569;
 }
 nav{
     height: 80px;
     width:100%;
     background: #34495e;
+    position: fixed;
+    top: 0;
 }
 label.logo{
     font-size:35px ;
     font-weight: bold;
-    color: white;
+    color: rgb(24, 216, 24);
     padding: 0 100px;
     line-height: 80px;
+}
+.logo{
+    margin-left: -70px;
+}
+.container2{
+    background-color:#364d64;
+     border: none;
+     border-radius: 20px;
 }
 nav ul{
     float: right;
     margin-right: 40px; 
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+
+}
+
+.paragraph{
+     font-size: 16px;
+     font-weight: 300;
+    width: 50%;
+    margin: auto;
+    color: rgb(194, 191, 191);
+    margin-bottom: 3%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text{
+    /* width: 50%;
+    margin-left: 20%; 
+    color:white;
+    margin-top: 10%;
+    margin-bottom: 2%; */
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 50%;
+    color: white;
+    margin-top: 20%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image{
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: auto;
+    border-radius: 70px;
 }
 nav li{
     display:inline-block;
     margin: 0 8px;
     line-height: 80px;
 }
+
 nav a{
     color: white;
     font-size: 18px;
@@ -49,6 +105,41 @@ nav #icon{
     cursor: pointer;
     display: none;
 }
+img{
+    width: 50px;
+    border-radius: 10px;
+    margin-bottom: -11px;
+}
+a{
+    color: white;
+}
+a>button:hover{
+    background-color: rgb(190, 165, 165);
+    color: green;
+}
+.container4{
+    background: #34495e;
+    display:block ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    margin-top:-30% ;
+    border-radius: 10px;
+}
+button{
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    color:white;
+    background: rgb(122, 105, 108);
+    margin-left: 10px;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+button:hover{
+    background: rgb(122, 105, 108) ;
+}
 @media(max-width: 1048px){
     label.logo{
         font-size: 32px;
@@ -60,11 +151,66 @@ nav #icon{
     nav a{
         font-size: 17px;
     }
+
 }
 @media(max-width:909px){
     nav #icon{
         display:block;
     }
+    .paragraph{
+        display: flex;
+        align-self: center;
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        color: rgb(194, 191, 191);
+        margin-bottom: 3%;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container1{
+        display: inline-block;
+        justify-content: center;
+        flex-direction: row;
+        height: 100vh;
+    
+    }
+    .text{
+        display: flex;
+        align-self: center;
+        width: 50%;
+        margin-left: 25%;
+        display: flex;
+        justify-content: center; 
+        color:white;
+        margin-top: 30%;
+        margin-bottom: 2%;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+
+    .container4{
+        background: #34495e;
+        display:block ;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 80%;
+        margin-top:20% ;
+        border-radius: 20px;
+    }
+    
+ 
+    .image{
+        width: 50%;
+        margin-right: 0px;
+        margin-left: 0px;
+        border-radius: 70px;
+        padding: 20px;
+    }
+   
     nav ul{
         position: fixed;
         width:100%;
@@ -91,8 +237,8 @@ nav #icon{
         left:0;
     }
 }
-section{
-    background:  url(logo.jpg) no-repeat;
+/* section{
+    background:  url(image1.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
-}
+} */
