@@ -24,7 +24,7 @@ label.logo{
     line-height: 80px;
 }
 .logo{
-    margin-left: 20px;
+    margin-left: -100px;
 Width:3%;
 }
 .container2{
@@ -237,6 +237,10 @@ button:hover{
     nav ul.show{
         left:0;
     }
+.logo{
+Margin-left:-100px;
+Width:3%;
+}
 }
 /* section{
     background:  url(image1.jpg) no-repeat;
