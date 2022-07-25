@@ -24,8 +24,7 @@ label.logo{
     line-height: 80px;
 }
 .logo{
-    margin-left: -100px;
-Width:3%;
+    Margin-left:80px;
 }
 .container2{
     background-color:#364d64;
@@ -238,8 +237,9 @@ button:hover{
         left:0;
     }
 .logo{
-Margin-left:2%;
-Width:3%;
+Position:fixed;
+Left:20px;
+
 }
 }
 /* section{
