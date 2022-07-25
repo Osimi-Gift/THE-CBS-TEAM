@@ -237,8 +237,7 @@ button:hover{
         left:0;
     }
 .logo{
-Position:fixed;
-Left:20px;
+Margin-left:-80px;
 
 }
 }
