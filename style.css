@@ -24,7 +24,7 @@ label.logo{
     line-height: 80px;
 }
 .logo{
-    Margin-left:80px;
+    Margin-left:-65px;
 }
 .container2{
     background-color:#364d64;
@@ -236,10 +236,9 @@ button:hover{
     nav ul.show{
         left:0;
     }
-.logo{
-Margin-left:-80px;
 
-}
+
+
 }
 /* section{
     background:  url(image1.jpg) no-repeat;
