@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Zuri website </title>
+  <link rel="stylesheet" href="Style2.css" type="text/css" />
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("ul").toggleClass("show");
+        });
+      });
+    </script>
+    <script src="Dashboard.js"></script>
+</head>
+
+<style>
+body{
+  margin:20px;
+
+}
+button{
+  color:white;
+  background-color: green;
+  padding: 20px;
+}
+input{
+  
+  padding:20px ;
+}
+input{
+  border: 2px solid white;
+  color:white;
+  background-color: navy-blue;
+}
+p{
+  color:white;
+  background-color: green;
+}
+span{
+  color:white;
+  background-color:red;
+}
+h1{
+  color: white;
+  background-color: green;
+}
+  img{
+    width:40%;
+}
+.container{
+  display: grid;
+  
+  grid-template-columns: auto auto;
+  gap:5%;
+  margin-top: 20%;
+  margin: 40% auto;
+}
+.stage{
+  background-color: grey;
+  border-radius:5px;
+  width: 50%;
+  
+}
+
+</style>
+<body>
+  <nav>
+ <ul>
+         <li><a  class="active"href="index.html">Home</a></li>
+        <li><a  class="active"href="#">Course</a></li>
+        <li><a href="#">Stage</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Time-Table</a></li>
+      </ul>
+<label id="icon"><i class="fa-solid fa-bars"></i></label>
+<label id="Dash">Dashboard</label>
+ </nav><br><br><br><br>
+  <script src="https://kit.fontawesome.com/68ac6bbe19.js" crossorigin="anonymous"></script>
+  <div id="div"></div>
+  <img id="Avatar"src="Avatar.jpg" alt="logo">
+ <input id="file" type="file">
+ <button onclick="profile()">upload picture</button>
+ <div class="container">
+   <div class="item"><button class="stage">Forum</button></div>
+  <div class="item"><button class="stage">Tasks</button></div>
+  <div class="item"><button class="stage">Air<br>drops</button></div>
+  <div class="item"> <button class="stage">Stage</button> </div>
+  <div class="item"> <button class="stage">Track<br></button> </div>
+  <div class="item"> <button class="stage">History Accessment</button> </div>
+ </div>
+  </body>
+  </html>

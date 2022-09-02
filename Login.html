@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Zuri website </title>
+  <link rel="stylesheet" href="Style2.css" type="text/css" />
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("ul").toggleClass("show");
+        });
+      });
+    </script>
+</head>
+
+ <script>
+//function nameCheck(){
+  
+ //var details = document.getElementById('name').value; 
+ 
+ var paragraph = document.getElementById("class");
+ if( details === ""){
+    alert("An error occurred");
+    
+ }else{
+ paragraph.innerHTML=`welcome ${details}`;
+  // windiw.location.redirect("http://localhost:8158/Flex.html");
+  
+  }
+   function validation(){
+     var input = document.getElementById('number').value;
+     var paragraph = document.getElementById('numpara');
+     var header = document.getElementById('class');
+     var details = document.getElementById('name').value;
+     var myName= document.getElementById('myName');
+     if( input.length  < 11){
+       paragraph.innerHTML= "incorrect Phone number ❌ "
+     }else{
+       paragraph.innerHTML= "correct phone number ✅" 
+       paragraph.innerHTML=""
+   
+     };
+     if( details === ""){
+       myName.innerHTML= "Please input your name";
+     }else{
+       myName.innerHTML= "",
+      header.innerHTML=`welcome ${details}`
+     // alert(` Thank you for applying dear ${details} your registration was sucessful, you can now login to your Dashboard `);
+      
+     };
+     if( input.length === 11){
+       alert(` Thank you for applying dear ${details} your registration was sucessful, you can now login to your Dashboard `);
+     }else{
+       paragraph.innerHTML= "Field cannot be Empty ❌";
+     };
+   };
+  </script>
+<style>
+body{
+  margin:20px;
+ 
+}
+button{
+  color:white;
+  background-color: green;
+  padding: 20px;
+}
+input{
+  margin: auto;
+  padding:20px ;
+}
+input{
+  border: 2px solid white;
+  
+}
+p{
+  color:white;
+  background-color: green;
+}
+span{
+  color:white;
+  background-color:red;
+  margin: auto;
+}
+#numpara{
+  margin: auto;
+  background-color: red;
+  color: white;
+}
+h1{
+  color: white;
+  margin: auto;
+  width: 80%;
+}
+</style>
+<body>
+  <nav>
+ <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="http://localhost:8158/Services.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+      <h1>Sign-up</h1>
+<label id="icon"><i class="fa-solid fa-bars"></i></label>
+ </nav><br><br><br><br>
+  <script src="https://kit.fontawesome.com/68ac6bbe19.js" crossorigin="anonymous"></script>
+  
+  <section id="section">
+     <H1  id="class"><strong></strong> </h1>
+  <div ><br><br><br><br><br>
+  <label style="color:white;"for="name">first Name</label>
+  <input id="name"type="text" class="input">
+  <span id="myName"></span>
+  </div>
+ <div>
+  </div>
+ <div><br><br>
+  <label style="color:white;" for="name"> Number </label>
+  <input id="number" type="Number" class="input">
+  <p id="numpara"></p>
+  </div>
+  <button onclick="validation();" id="btn">submit</button>
+  </section><br><br>
+<div><a href="Dashboard.html"><button>Login</button></a></div>
+  </body>
+  </html>
